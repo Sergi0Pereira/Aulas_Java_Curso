@@ -20,7 +20,7 @@ public class Exercicio_112 {
          num1= in.nextDouble();
     
          System.out.println("Insira o seu segundo numero: ");
-    
+
          num2= in.nextDouble();
     
         double soma=num1+num2;

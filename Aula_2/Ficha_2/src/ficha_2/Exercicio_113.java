@@ -16,20 +16,30 @@ public class Exercicio_113 {
         
         Scanner in= new Scanner(System.in);
         
-        double num=1.32;
+        double num;
         
         System.out.println("Insira um numero por favor: ");
         num=in.nextDouble();
-        
+
+        int arr = (int) ((int)num+0.5);
+        System.out.println(arr);
        
        int valor = (int)num;
-        
+
+
+
+       if(valor%2==0){
+         valor++;
+       }
        while(valor%2!=0){
            valor++;
         }
        System.out.println(valor);
        
        valor=(int)num;
+      if(valor%2!=0){
+        valor--;
+      }
        while(valor%2!=0){
            valor--;
         }
