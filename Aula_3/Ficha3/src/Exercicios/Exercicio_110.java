@@ -14,6 +14,10 @@ public class Exercicio_110{
         System.out.println("Insira por favor o numero que pretende converter: ");
         
         num=in.nextDouble();
+          if (num >999 || num<=0){
+                        System.out.println("Numero fora dos limites.");
+            }
+            else{
         int centint = 0,dezint=0,unidint=0;
         
         if(num>100&& num<1000){
@@ -154,10 +158,7 @@ public class Exercicio_110{
             }
             
            
-            if (num >999 || num<=0){
-                        System.out.println("Numero fora dos limites.");
-            }
-            else{
+          
                         System.out.println("O numero "+(int)num+" corresponde ao número "+c+d+u+" em numeraçao romana.");
         }
     }
