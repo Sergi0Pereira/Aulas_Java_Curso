@@ -37,7 +37,7 @@ public class Exercicio_113 {
             raiz1 = raiz2 = -b / (2 * a);
             System.out.println("O valor das duas raizes iguais e tem o valor de: {" + raiz1 + "}.");
         } else {
-            System.out.println("A equação de 2º grau não possui raízes reais!");
+            System.out.println("A equação de 2º grau não possui raízes reais.");
         }
 
     }
