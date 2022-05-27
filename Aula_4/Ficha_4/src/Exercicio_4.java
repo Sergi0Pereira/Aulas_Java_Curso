@@ -7,7 +7,7 @@ public class Exercicio_4 {
 
         int numero;
         int soma = 0;
-        
+
         Scanner in = new Scanner(System.in);
         System.out.println("Insira o numero que pretende inverter: ");
         numero = in.nextInt();
