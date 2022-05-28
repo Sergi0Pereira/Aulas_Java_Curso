@@ -1,49 +1,46 @@
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Exercicio_7 {
 
     public static void main(String[] args) {
 
-        int numero=0;
-        int numSaved=0;
-        int resto=0;
-        int inversao=0;
+        int input = 0;
+        int resto = 0;
+        int inversao = 0;
+
+        String numInver;
+        String numero;
+
+        ArrayList invertido = new ArrayList();
+
+        numInver = (String) invertido.stream().map(Object::toString).collect(Collectors.joining(""));
 
         Scanner in = new Scanner(System.in);
         System.out.println("Insira o numero que pretende verificar: ");
-        numero = in.nextInt();
-        numSaved=numero;
+        input = in.nextInt();
 
-        for (int i=0; numero != 0;i++ ) {
-            numero /= 10;
-             resto += numero % 10;
-             ArrayList invertido= new ArrayList();
-             invertido.add(resto);
-              System.out.println(invertido.get(i));
-                    }
-        
+        numero = Integer.toString(input);
+
+        for (int i = 0; input != 0; i++) {
+
+            resto = input % 10;
+            input /= 10;
+            invertido.add(resto);
+            numInver = (String) invertido.stream().map(Object::toString).collect(Collectors.joining(""));
+
+        }
+
+        System.out.println(numero);
+        System.out.println(numInver);
+
+        if (numero.equals(numInver)) {
+            System.out.println("O seu numero é capicua.");
+        } else {
+            System.out.println("O seu numero nao é capicua");
+        }
 
     }
 }
-
-/*
-            
-            
-            
-            
-            
-         for(int x=0; i>x;x++){
-             inversao=inversao+invertido[x];
-         }
-
-        if(resto==numSaved){
-            System.out.println("O seu numero é capacua.");
-        }
-        else{
-            System.out.println("O seu numero nao é capicua.");
-        }
-
-    }
-*/
