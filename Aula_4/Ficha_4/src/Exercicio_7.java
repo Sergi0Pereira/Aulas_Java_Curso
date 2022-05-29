@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -32,15 +31,11 @@ public class Exercicio_7 {
             numInver = (String) invertido.stream().map(Object::toString).collect(Collectors.joining(""));
 
         }
-
-        System.out.println(numero);
-        System.out.println(numInver);
-
+        
         if (numero.equals(numInver)) {
             System.out.println("O seu numero é capicua.");
         } else {
             System.out.println("O seu numero nao é capicua");
         }
-
     }
 }
