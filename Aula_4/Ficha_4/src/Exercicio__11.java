@@ -10,16 +10,16 @@ public class Exercicio__11 {
 
         String palavra;
         int reps = 0;
-        char A;
+        char a;
         int x = 0;
 
         System.out.println("Insira aqui a sua palavra:");
-        palavra = in.next();
+        palavra = in.nextLine();
         System.out.println("A descobrir a sua palavra........ ");
         System.out.print("A sua palavra é ");
 
         for (int i = 0; i <= 127; i++) {
-            char a = (char) i;
+             a = (char) i;
             if (palavra.charAt(x) == a) {
                 System.out.print(a);
                 x++;
@@ -30,6 +30,7 @@ public class Exercicio__11 {
             }
             reps++;
         }
+        
         System.out.print(", e o numero de tentativas foram  " + reps + ".");
     }
 }

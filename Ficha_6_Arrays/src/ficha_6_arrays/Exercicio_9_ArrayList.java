@@ -1,8 +1,9 @@
 package ficha_6_arrays;
 
 import java.util.ArrayList;
-
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Exercicio_9_ArrayList {
 
@@ -12,8 +13,7 @@ public class Exercicio_9_ArrayList {
         String res = "s";
         int num;
         ArrayList numeros = new ArrayList();
-        ArrayList reps = new ArrayList();
-        ArrayList repsf = new ArrayList();
+        Set<Integer> reps = new HashSet<>();
 
         while (!res.equalsIgnoreCase("n") || res.equalsIgnoreCase("s")) {
             System.out.println("Insira os seus numeros: ");
@@ -27,8 +27,8 @@ public class Exercicio_9_ArrayList {
         for (int i = 0; i < x; i++) {
             for (x = x; i < x; x--) {
                 if (numeros.get(i) == numeros.get(x)) {
-                    if (!reps.get(i).equals(numeros.get(x))) {
-                        reps.add(numeros.get(i));
+                    if (!reps.equals(numeros.get(x))) {
+                        reps.add((Integer) numeros.get(i));
                     }
                 }
             }
