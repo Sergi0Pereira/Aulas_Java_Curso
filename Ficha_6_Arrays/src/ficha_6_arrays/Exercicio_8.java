@@ -1,7 +1,5 @@
 package ficha_6_arrays;
 
-import java.util.Scanner;
-
 public class Exercicio_8 {
 
     public static void main(String[] args) {
