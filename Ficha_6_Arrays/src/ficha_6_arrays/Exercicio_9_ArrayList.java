@@ -15,11 +15,11 @@ public class Exercicio_9_ArrayList {
         ArrayList numeros = new ArrayList();
         Set<Integer> reps = new HashSet<>();
 
-        while (!res.equalsIgnoreCase("n") || res.equalsIgnoreCase("s")) {
+        while (!res.equalsIgnoreCase("n") && res.equalsIgnoreCase("s")) {
             System.out.println("Insira os seus numeros: ");
             num = in.nextInt();
             numeros.add(num);
-            System.out.println("Deseja inserir mais algum numero?");
+            System.out.println("Deseja inserir mais algum numero?"); 
             res = in.next();
         }
 
